@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  server:
+    build: .
+    volumes:
+      - ./examples/minimal/server.toml:/app/config.toml
+    ports:
+      - 5202:5202
+
+  client:
+    build: .
+    volumes:
+      - ./examples/minimal/client.toml:/app/config.toml
+
+  web:
+    image: crccheck/hello-world

@@ -10,3 +10,4 @@
 .gitignore
 *.md
 LICENSE
+docker-compose.yml

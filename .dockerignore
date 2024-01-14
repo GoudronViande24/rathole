@@ -11,3 +11,4 @@
 *.md
 LICENSE
 docker-compose.yml
+build-image.sh
